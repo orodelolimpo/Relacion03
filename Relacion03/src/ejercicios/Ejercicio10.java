@@ -7,10 +7,18 @@ public class Ejercicio10 {
 	public static void main(String[] args) {
 		// 10. Algoritmo que escriba las tablas de multiplicar del 1 al 10 usando esquemas for
 		System.out.println("Tabla de multiplicar");
-		Scanner teclado = new Scanner (System.in);
-		int num=teclado.nextInt();
+		int tabla=0;
+		int num=1;
+		for (int i =1; i <= 100; i++) {
+			if (i%10==0)
+				tabla++;
+			System.out.println("Tabla del " +tabla);
+			num=1;
+		}
 		
-		for
+		System.out.printf("%d x %d = %d\n", tabla, num, tabla*num);
+		num++;
+
 
 	}
 
